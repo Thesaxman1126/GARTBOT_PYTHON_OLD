@@ -31,13 +31,13 @@ async def on_ready():
 
 @client.event
 async def on_member_join(member):
-	welcome = client.get_channel(870128815119138887)
+	welcome = client.get_channel('CHANNEL ID HERE')
 	print('Someone has joined a server')
 	await welcome.send(f'Welcome {member.mention}')
 
 @client.event
 async def on_member_remove(member):
-	leave = client.get_channel(870128815119138887)
+	leave = client.get_channel('CHANNEL ID HERE')
 	print('A bitch left a server')
 	await leave.send(f'{member.mention} is a bitch for leaving the server')
 
@@ -88,7 +88,7 @@ async def on_message(message):
 async def change_status():
 	
 	GARTisms = ['@everyone Do Math Faster', '@everyone Yeah I\'m happy with this grade distribution.', '@everyone If you do the GRE faster you do better in Grad school']
-	channel = client.get_channel(870128815119138887)
+	channel = client.get_channel('CHANNEL ID HERE')
 	await client.change_presence(activity=discord.Game('with your emotions'))
 	print('Reminded them to do math faster.')
 	await channel.send(random.choice(GARTisms))
