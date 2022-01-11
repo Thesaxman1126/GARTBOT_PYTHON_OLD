@@ -17,7 +17,7 @@ type_time = random.uniform(0.5, 2)
 intents = discord.Intents.default()
 intents.members = True
 intents.messages = True
-token = 'ODYyOTQ0MjgxMjQ5NDQ3OTU2.YOftfQ.JNlKz5g9eivL6SUIXCPzGvjVNzc'
+token = 'YOUR TOKEN HERE'
 client = commands.Bot(command_prefix='&', intents = intents)
 
 
